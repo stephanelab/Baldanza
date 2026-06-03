@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import logo from "../../assets/logo.png"
+import logo from "../../assets/Logo_BALDANZA.svg"
 import "./styles.scss"
 
 export default function Header() {
