@@ -1,0 +1,17 @@
+@use "../../styles/_variables" as *;
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+#navbar {
+  --bs-navbar-color: #{$secondary-green};
+  --bs-navbar-active-color: #{$tertiary-brown};
+  &:hover {
+    --bs-navbar-hover-color: #{$secondary-green};
+  }
+}
