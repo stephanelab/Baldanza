@@ -1,0 +1,9 @@
+@use "../../styles/_variables" as *;
+
+.banner {
+  background-color: #{$light-grey};
+}
+
+.btn {
+  --bs-btn-bg: #{$light-brown};
+}

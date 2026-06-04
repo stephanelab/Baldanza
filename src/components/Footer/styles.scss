@@ -1,0 +1,10 @@
+@use "../../styles/_variables" as *;
+
+footer {
+  margin: 8px 0;
+}
+
+i {
+  color: #{$dark-green};
+  font-size: 3rem;
+}

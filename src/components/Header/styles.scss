@@ -9,9 +9,10 @@
 }
 
 #navbar {
-  --bs-navbar-color: #{$secondary-green};
-  --bs-navbar-active-color: #{$tertiary-brown};
+  --bs-navbar-color: #{$dark-green};
+  --bs-navbar-active-color: #{$dark-brown};
+  background-color: #{white};
   &:hover {
-    --bs-navbar-hover-color: #{$secondary-green};
+    --bs-navbar-hover-color: #{$dark-green};
   }
 }
