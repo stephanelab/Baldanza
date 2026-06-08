@@ -7,9 +7,7 @@ export default function Accueil() {
   return (
     <div className="accueil">
       <section className="banner container-fluid d-flex flex-column align-items-center gap-4 py-4">
-        <h1>
-          <span>BALDANZA</span>
-        </h1>
+        <h1>BALDANZA</h1>
         <img src={Banner_Image} alt="Bannière Baldanza" />
         <p>Horaire : du lundi au vendredi de 9h à 18h30</p>
         <RDV_button />
