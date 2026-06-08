@@ -1,4 +1,6 @@
-import { createBrowserRouter } from "react-router-dom"
+// Remplacement de createBrowserRouter par createHashRouter pour adaptation sur gitHub pages
+// import { createBrowserRouter } from "react-router-dom"
+import { createHashRouter } from "react-router-dom"
 import Accueil from "./pages/Accueil"
 import Prestations from "./pages/Prestations"
 import About from "./pages/A-Propos"
@@ -18,6 +20,7 @@ const routes = [
   },
 ]
 
-const App = createBrowserRouter(routes)
+// const App = createBrowserRouter(routes)
+const App = createHashRouter(routes)
 
 export default App
