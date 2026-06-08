@@ -1,21 +1,32 @@
+@use "bootstrap/scss/bootstrap" as *;
+
 body {
   h1 {
     font-family:
       be vietnam pro,
       sans-serif;
-    font-size: 6rem;
+    font-size: 2.5rem;
+    @include media-breakpoint-up(md) {
+      font-size: 6rem;
+    }
   }
 
   h2 {
     font-family:
       TT Drugs,
       sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 2.5rem;
+    }
   }
 
   p {
     font-family: Manjari, sans-serif;
-    font-size: 1.25rem;
+    font-size: 0.875rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.25rem;
+    }
   }
 }
 
