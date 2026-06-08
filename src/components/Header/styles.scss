@@ -11,8 +11,13 @@
 #navbar {
   --bs-navbar-color: #{$dark-green};
   --bs-navbar-active-color: #{$dark-brown};
-  background-color: #{white};
+  background-color: #{$white};
   &:hover {
     --bs-navbar-hover-color: #{$dark-green};
   }
+}
+
+/* Align items on the right when collapse is open */
+.navbar-nav {
+  align-items: flex-end;
 }

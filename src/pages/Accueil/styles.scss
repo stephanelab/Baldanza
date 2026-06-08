@@ -1,7 +1,12 @@
 @use "../../styles/_variables" as *;
 
 .banner {
-  background-color: #{$light-grey};
+  background: url("../../assets/ChatGPT-banner.webp");
+  background-size: cover;
+  img {
+    width: clamp(180px, 30vw, 600px);
+    opacity: 80%;
+  }
 }
 
 .soins {
