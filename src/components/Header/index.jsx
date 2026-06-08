@@ -13,7 +13,7 @@ export default function Header() {
       >
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            <img src={logo} alt="Logo Baldanza" width="100" height="100" />
+            <img src={logo} alt="Logo Baldanza" width="50" height="50" />
           </NavLink>
           <button
             className="navbar-toggler"

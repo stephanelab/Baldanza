@@ -1,0 +1,25 @@
+@use "../../styles/_variables" as *;
+@use "bootstrap/scss/bootstrap" as *;
+
+.btn.btn-baldanza {
+  font-family:
+    TT Drugs,
+    sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  --bs-btn-bg: #{$light-brown};
+
+  --bs-btn-hover-bg: #{$light-brown};
+  --bs-btn-hover-border-color: #{$dark-brown};
+  --bs-btn-border-width: 3px;
+  &:hover {
+    box-shadow:
+      0 0 10px rgba($dark-green, 0.4),
+      0 0 25px rgba($dark-green, 0.3),
+      0 0 50px rgba($dark-green, 0.2);
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 2.5rem;
+  }
+}
