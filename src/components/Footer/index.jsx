@@ -3,7 +3,7 @@ import "./styles.scss"
 export default function Footer() {
   return (
     <footer>
-      <div class="d-flex justify-content-end me-5 gap-4">
+      <div className="d-flex justify-content-end me-5 gap-4">
         <a href="https://www.instagram.com/baldanza_esthetic/" target="_blank">
           <i className="fa-brands fa-square-instagram"></i>
         </a>

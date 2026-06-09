@@ -1,4 +1,5 @@
 @use "bootstrap/scss/bootstrap" as *;
+@use "./_variables.scss" as *;
 
 body {
   h1 {
@@ -16,6 +17,8 @@ body {
       TT Drugs,
       sans-serif;
     font-size: 1.5rem;
+    color: #{$black};
+    font-weight: 700;
     @include media-breakpoint-up(lg) {
       font-size: 2.5rem;
     }

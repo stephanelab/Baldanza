@@ -7,7 +7,7 @@ const soins = [
     id: 1,
     name: "Epilation laser",
     description:
-      "Pour un premier endez-vous :\n- Tarif indiqué à la séance.\n- Nombre de séances nécessaires : 5 à 10 selon la personne, la zone et le type de poil (ne peut être défini à l'avance).\n- Arrêter l'épilation à la cire ou pince à épiler au moins 1 mois avant.\n- Raser la zone à traiter la veille de la séance.\n- Pas d'exposition directe au soleil 15 jours avant et après la séance.",
+      "Pour un premier rendez-vous :\n- Tarif indiqué à la séance.\n- Nombre de séances nécessaires : 5 à 10 selon la personne, la zone et le type de poil (ne peut être défini à l'avance).\n- Arrêter l'épilation à la cire ou pince à épiler au moins 1 mois avant.\n- Raser la zone à traiter la veille de la séance.\n- Pas d'exposition directe au soleil 15 jours avant et après la séance.",
     photo: laser,
     prestations: [
       {
@@ -312,14 +312,14 @@ const soins = [
         name: "Cuisses (sans booster)",
         description: "",
         durée: "1h",
-        prix: "de 100 à 130 €",
+        prix: "de 100 à 130",
       },
       {
         id: 9,
         name: "Ventre (sans booster)",
         description: "",
         durée: "1h",
-        prix: "de 100 à 120 €",
+        prix: "de 100 à 120",
       },
       {
         id: 10,

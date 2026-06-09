@@ -8,6 +8,12 @@
   font-size: 1.5rem;
   font-weight: 700;
 
+  background: linear-gradient(
+    to bottom,
+    lighten($light-brown, 5%),
+    $light-brown
+  );
+
   --bs-btn-bg: #{$light-brown};
 
   --bs-btn-hover-bg: #{$light-brown};
