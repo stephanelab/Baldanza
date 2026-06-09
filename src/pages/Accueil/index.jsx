@@ -1,4 +1,4 @@
-import Banner_Image from "../../assets/Image_bannière.webp"
+import Banner_Image from "../../assets/image_banniere.webp"
 import "./styles.scss"
 import soins from "../../datas/soins"
 import RDV_button from "../../components/Bouton_RDV"
