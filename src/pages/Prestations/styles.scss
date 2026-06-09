@@ -1,5 +1,37 @@
+@use "bootstrap/scss/bootstrap" as *;
 @use "../../styles/_variables" as *;
 
 .prestations {
   background-color: #{$light-brown};
+}
+
+.accordion .accordion-item {
+  --bs-accordion-btn-bg: #{$dark-brown};
+  --bs-accordion-active-bg: #{$dark-brown};
+  --bs-accordion-bg: #{$light-green};
+  border: none;
+}
+
+.accordion-header:hover {
+  border: 3px solid #{$light-green};
+}
+
+.prestation-title {
+  font-family:
+    TT Drugs,
+    sans-serif;
+  font-size: 1.5rem;
+  color: #{$black};
+  font-weight: 700;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.5rem;
+  }
+}
+
+.rdv-sticky {
+  //   position: sticky;
+  top: 70px !important;
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   margin-bottom: 1rem;
 }
