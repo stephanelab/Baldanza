@@ -1,4 +1,4 @@
-import photo from "../assets/image_bannière.webp"
+import photo from "../assets/image_banniere.webp"
 import hydralift from "../assets/ChatGPT-hydralift.webp"
 import laser from "../assets/ChatGPT-laser.webp"
 
