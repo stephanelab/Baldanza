@@ -1,0 +1,12 @@
+@use "../../styles/_variables" as *;
+
+.renseignements {
+  background-color: #{$light-brown};
+  .btn.btn-baldanza {
+    background: linear-gradient(
+      to bottom,
+      lighten($dark-brown, 5%),
+      $dark-brown
+    );
+  }
+}
