@@ -15,12 +15,12 @@ export default function Prestations() {
     if (soinIndex !== null) {
       setTimeout(() => {
         const collapseElement = document.getElementById(`collapse-${soinIndex}`)
-        if (collapseElement) {
-          // eslint-disable-next-line no-undef
-          const bsCollapse = new bootstrap.Collapse(collapseElement, {
-            toggle: true,
-          })
-          bsCollapse.show()
+        const button = document.querySelector(`[aria-controls="collapse-${soinIndex}"]`)
+        
+        if (collapseElement && button) {
+          collapseElement.classList.remove("collapse")
+          button.classList.remove("collapsed")
+          button.setAttribute("aria-expanded", "true")
           collapseElement.scrollIntoView({ behavior: "smooth", block: "start" })
         }
       }, 100)
