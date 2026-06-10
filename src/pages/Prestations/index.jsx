@@ -1,9 +1,32 @@
 import "./styles.scss"
+import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
 import soins from "../../datas/soins"
 import RDV_button from "../../components/Bouton_RDV"
 import Accordion_body from "../../components/Accordion-body"
 
 export default function Prestations() {
+  const location = useLocation()
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search)
+    const soinIndex = searchParams.get("soin")
+
+    if (soinIndex !== null) {
+      setTimeout(() => {
+        const collapseElement = document.getElementById(`collapse-${soinIndex}`)
+        const button = document.querySelector(`[aria-controls="collapse-${soinIndex}"]`)
+        
+        if (collapseElement && button) {
+          collapseElement.classList.remove("collapse")
+          button.classList.remove("collapsed")
+          button.setAttribute("aria-expanded", "true")
+          collapseElement.scrollIntoView({ behavior: "smooth", block: "start" })
+        }
+      }, 100)
+    }
+  }, [location.search])
+
   return (
     <div className="prestations d-flex flex-column gap-4 py-4">
       <h1 className="text-center">Prestations</h1>

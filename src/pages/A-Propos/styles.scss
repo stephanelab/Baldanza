@@ -1,0 +1,19 @@
+@use "../../styles/_variables" as *;
+
+.intro {
+  background-color: #{$light-brown};
+  .btn.btn-baldanza {
+    background: linear-gradient(
+      to bottom,
+      lighten($dark-brown, 5%),
+      $dark-brown
+    );
+  }
+  img {
+    border-radius: 75%/50%;
+  }
+}
+
+.diplomes {
+  background-color: #{$light-brown};
+}

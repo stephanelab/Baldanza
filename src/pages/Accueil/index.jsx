@@ -2,6 +2,7 @@ import Banner_Image from "../../assets/image_banniere.webp"
 import "./styles.scss"
 import soins from "../../datas/soins"
 import RDV_button from "../../components/Bouton_RDV"
+import { Link } from "react-router-dom"
 
 export default function Accueil() {
   return (
@@ -18,19 +19,24 @@ export default function Accueil() {
       </section>
       <section className="soins py-5">
         <div className="row row-cols-1 row-cols-md-2 g-5 px-5">
-          {soins.map((soin) => (
+          {soins.map((soin, index) => (
             <div className="col" key={soin.id} data-aos="fade-up">
-              <div className="card h-100">
-                <img
-                  src={soin.photo}
-                  className="card-img-top"
-                  alt={soin.name}
-                />
-                <div className="card-img">
-                  <h2 className="card-title text-center">{soin.name}</h2>
-                  <p className="card-text px-3">{soin.description}</p>
+              <Link
+                to={`/prestations?soin=${index}`}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <div className="card h-100">
+                  <img
+                    src={soin.photo}
+                    className="card-img-top"
+                    alt={soin.name}
+                  />
+                  <div className="card-img">
+                    <h2 className="card-title text-center">{soin.name}</h2>
+                    <p className="card-text px-3">{soin.description}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>
