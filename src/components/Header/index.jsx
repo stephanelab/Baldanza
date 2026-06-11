@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom"
 import logo from "../../assets/Logo_BALDANZA.svg"
 import "./styles.scss"
+// import { Collapse } from "bootstrap"
+
+const closeNavbar = () => {
+  const navbar = document.getElementById("navbarSupportedContent")
+  navbar?.classList.remove("show")
+}
 
 export default function Header() {
   return (
@@ -29,22 +35,34 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item active">
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="/" onClick={closeNavbar}>
                   Accueil
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/prestations">
+                <NavLink
+                  className="nav-link"
+                  to="/prestations"
+                  onClick={closeNavbar}
+                >
                   Prestations
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/a-propos">
+                <NavLink
+                  className="nav-link"
+                  to="/a-propos"
+                  onClick={closeNavbar}
+                >
                   À propos
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
+                <NavLink
+                  className="nav-link"
+                  to="/contact"
+                  onClick={closeNavbar}
+                >
                   Contact
                 </NavLink>
               </li>
