@@ -56,6 +56,17 @@ export default function Contact() {
                 Tel. : 07-50-20-58-44
               </p>
               <p>Horaire : du lundi au vendredi de 9h à 18h30</p>
+              {/* <!-- Elfsight Google Reviews | Untitled Google Reviews --> */}
+              <div className="avis-g pb-4">
+                <script
+                  src="https://elfsightcdn.com/platform.js"
+                  async
+                ></script>
+                <div
+                  class="elfsight-app-af6e619e-2cb7-441c-a8ba-5c45165d9ea9"
+                  data-elfsight-app-lazy
+                ></div>
+              </div>
               <RDV_button />
             </div>
           </div>
