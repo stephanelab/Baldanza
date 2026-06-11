@@ -15,8 +15,10 @@ export default function Prestations() {
     if (soinIndex !== null) {
       setTimeout(() => {
         const collapseElement = document.getElementById(`collapse-${soinIndex}`)
-        const button = document.querySelector(`[aria-controls="collapse-${soinIndex}"]`)
-        
+        const button = document.querySelector(
+          `[aria-controls="collapse-${soinIndex}"]`,
+        )
+
         if (collapseElement && button) {
           collapseElement.classList.remove("collapse")
           button.classList.remove("collapsed")

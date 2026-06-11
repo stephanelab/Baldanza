@@ -4,6 +4,8 @@
   background: url("../../assets/ChatGPT-banner.webp");
   background-size: cover;
   img {
+    max-width: 100%;
+    height: auto;
     width: clamp(180px, 30vw, 600px);
     opacity: 80%;
   }
